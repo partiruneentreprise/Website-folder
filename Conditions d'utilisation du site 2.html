@@ -17,29 +17,28 @@
 <h2><strong>Enregistrement des données</strong></h2>
 <p>Ce site enregistre les réponses et les textes que vous soumettez. Ces données sont gardées confidentiellement.</p>
 
-                <script>
+               <script>
+	
+	                function continuer() {
+	                
+	
+	                if (!checkbox.checked)
+                {alert("Veuillez cocher la case avant de continuer");}                                                        
+	
+	                else 
+	                {location.href = "Banque, prêt, assurance, fiducie de revenu, chemin de fer.html"}
+	
+	                }
+</script>
 
-                function continuer() {
-
-                var a=document.getElementById("checkbox").checked;
-                
-
-                if (!checkbox.checked)
-                {document.getElementById("Accepter").innerHTML="Veuillez cocher la case avant de continuer";}                                                        
-
-                else 
-                {document.getElementById("Accepter").innerHTML="<a href='Nombre dadministrateurs canadiens.html'>Cliquez ici pour accéder à la prochaine page</a>";}
-
-                }
-               </script>
              
-               <form>
-               <input type=checkbox id="checkbox">En cochant cette case, je confirme que j'ai dûment pris connaissance des conditions d'utilisation et j'accepte la totalité de celles-ci.<br>
+<form>
+<input type=checkbox id="checkbox">En cochant cette case, je confirme que j'ai dûment pris connaissance des conditions d'utilisation et j'accepte la totalité de celles-ci.<br>
                
-               </form>
+</form>
 
-               <button type=button onclick="continuer()">Soumettre</button>
+<button type=button onclick="continuer()">Soumettre</button>
 
-               <p id="Accepter"></p>
+<p id="Accepter"></p>
 </body>
 </html>
